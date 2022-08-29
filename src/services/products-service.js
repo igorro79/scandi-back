@@ -15,6 +15,7 @@ const addProduct = async (order) => {
 };
 const removeProduct = async (ids) => {
   const { array } = ids;
+  console.log(array);
   const sqlQuery = "DELETE from products WHERE id IN (?)";
   const result = await pool.query(sqlQuery, [array]);
   return result;
