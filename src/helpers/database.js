@@ -1,5 +1,4 @@
 const mariadb = require("mariadb");
-const { connect } = require("../routes/api/products-api");
 
 const pool = mariadb.createPool({
   host: process.env.DB_HOST,
